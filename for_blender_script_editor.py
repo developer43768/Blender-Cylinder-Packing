@@ -36,13 +36,6 @@ def addBevel():
 
 circles = []
 
-
-bpy.ops.mesh.primitive_plane_add(size=65, enter_editmode=False, align='WORLD', location=(0, 0, 0), scale=(1, 1, 1))
-
-obj = bpy.context.object
-obj.data.materials.append(bpy.data.materials['background'])
-
-
 # Main Part of The Program
 while len(circles)<=1000: # Change the number of the cylinders
     overlapping = False
@@ -64,7 +57,7 @@ while len(circles)<=1000: # Change the number of the cylinders
         addBevel()
         
         obj = bpy.context.object
-        obj.data.materials.append(bpy.data.materials['mat'])
+        obj.data.materials.append(bpy.data.materials['mat']) # Change Material name if you want apply another material   'mat'
             
                 
     
