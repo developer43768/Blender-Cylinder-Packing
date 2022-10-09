@@ -15,8 +15,8 @@ def randomLoc(z=0):
 
 # Random Radius for Cylinder
 def randomRad():
-    rad = random.randint(1,8) # You can Change Radius Range
-    return rad
+    rad = random.randint(1,16) # You can Change Radius Range
+    return rad/2
 
 # Random Height for Cylinders
 def randomDepth():
@@ -37,7 +37,7 @@ def addBevel():
 circles = []
 
 # Main Part of The Program
-for i in range(1000): # Change the number of the cylinders
+for i in range(100000): # Change the number for the iteration    (if your computer is slow you should decrease the number)
     overlapping = False
     
     location = randomLoc()
@@ -57,7 +57,7 @@ for i in range(1000): # Change the number of the cylinders
         addBevel()
         
         obj = bpy.context.object
-        obj.data.materials.append(bpy.data.materials['mat']) # Change Material name if you want apply another material   'mat'
+        obj.data.materials.append(bpy.data.materials['mat'])
             
                 
     
