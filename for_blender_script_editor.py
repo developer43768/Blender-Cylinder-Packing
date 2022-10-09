@@ -44,7 +44,7 @@ obj.data.materials.append(bpy.data.materials['background'])
 
 
 # Main Part of The Program
-for i in range(100000): # Change the number for the iteration
+while len(circles)<=100: # Change the number for the iteration
     overlapping = False
     
     location = randomLoc()
