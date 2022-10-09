@@ -37,7 +37,7 @@ def addBevel():
 circles = []
 
 # Main Part of The Program
-while len(circles)<=1000: # Change the number of the cylinders
+for i in range(1000): # Change the number of the cylinders
     overlapping = False
     
     location = randomLoc()
