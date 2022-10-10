@@ -37,7 +37,7 @@ def addBevel():
 circles = []
 
 # Main Part of The Program
-for i in range(100000): # Change the number for the iteration    (if your computer is slow you should decrease the number)
+for i in range(1000): # Change the number for the iteration    (if your computer is slow you should decrease the number)
     overlapping = False
     
     location = randomLoc()
