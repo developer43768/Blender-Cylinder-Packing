@@ -36,7 +36,7 @@ def addBevel():
 
 circles = []
 
-# Main Part of The Program
+# Main Part
 for i in range(1000): # Change the number for the iteration    (if your computer is slow you should decrease the number)
     overlapping = False
     
